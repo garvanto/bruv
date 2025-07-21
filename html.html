@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="$BRUV - The most sigma cat in the blockchain game innit! Fair launch on Pump.fun, LP burned, contract renounced. Join the mandem revolution bruv!">
+    <meta name="keywords" content="BRUV, crypto, meme coin, solana, pump.fun, sigma cat">
+    <meta property="og:title" content="$BRUV - Sigma Cat Innit">
+    <meta property="og:description" content="MANS THE HARDEST CAT IN THE ENDS FAM. Fair launch on Pump.fun.">
+    <meta property="og:image" content="bruv.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="$BRUV - Sigma Cat Innit">
+    <meta name="twitter:description" content="MANS THE HARDEST CAT IN THE ENDS FAM">
+    <meta name="twitter:image" content="bruv.jpg">
+    <title>$BRUV - Sigma Cat Innit</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Glitch effect for text */
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff,
+                    0.025em 0.05em 0 #fffc00;
+            }
+            15% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.05em -0.025em 0 #fc00ff,
+                    0.025em 0.05em 0 #fffc00;
+            }
+            16% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff,
+                    -0.05em -0.05em 0 #fffc00;
+            }
+            49% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.025em 0 #fc00ff,
+                    -0.05em -0.05em 0 #fffc00;
+            }
+            50% {
+                text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff,
+                    0 -0.05em 0 #fffc00;
+            }
+            99% {
+                text-shadow: 0.025em 0.05em 0 #00fffc, 0.05em 0 0 #fc00ff,
+                    0 -0.05em 0 #fffc00;
+            }
+            100% {
+                text-shadow: -0.025em 0 0 #00fffc, -0.025em -0.025em 0 #fc00ff,
+                    -0.025em -0.05em 0 #fffc00;
+            }
+        }
+
+        .glitch {
+            animation: glitch 0.5s infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #fff, #666, #fff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-shift 3s ease-in-out infinite;
+            background-size: 200% auto;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        /* Neon glow effect */
+        .neon-border {
+            box-shadow: 0 0 20px #fff, inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #fff;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #fff;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .logo:hover {
+            animation: glitch 0.3s infinite;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            text-shadow: 0 0 10px #fff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4rem;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+            animation: pulse-bg 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-bg {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-image {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* BRUV image container */
+        .bruv-hero-placeholder {
+            width: 300px;
+            height: 300px;
+            border: 4px solid #fff;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+            transition: all 0.5s ease;
+        }
+
+        .bruv-hero-placeholder:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+        }
+
+        /* make the <img> fill the box */
+        .bruv-hero-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 8rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.5), 0 0 30px rgba(255, 255, 255, 0.2);
+            letter-spacing: -2px;
+            line-height: 0.9;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 3vw, 2rem);
+            margin-bottom: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ccc;
+        }
+
+        .price-display {
+            background: #000;
+            border: 3px solid #fff;
+            padding: 2rem;
+            margin-top: 2rem;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .price-display::before {
+            content: 'LIVE PRICE INNIT';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000;
+            padding: 0 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+
+        .price-display::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .price-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 0 20px #fff;
+        }
+
+        .price-change {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: #000;
+            color: #fff;
+            border: 3px solid #fff;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn-primary:hover::before {
+            left: 0;
+        }
+
+        .btn-primary:hover {
+            color: #000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 3px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background: #fff;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .social-btn {
+            width: 60px;
+            height: 60px;
+            background: #000;
+            border: 3px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: #fff;
+            transition: all 0.3s ease;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+
+        .social-btn:hover::before {
+            width: 100%;
+            height: 100%;
+        }
+
+        .social-btn:hover {
+            color: #000;
+            transform: scale(1.1) rotate(5deg);
+            z-index: 1;
+        }
+
+        .social-btn svg,
+        .social-btn span {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Dexscreener icon specific styling */
+        .social-btn.dex-icon {
+            font-size: 1rem;
+            font-weight: 900;
+            letter-spacing: 0;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .generator-section {
+            background: #111;
+            border: 3px solid #fff;
+            padding: 3rem;
+            margin: 3rem auto;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            max-width: 1200px;
+        }
+
+        .generator-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 2px,
+                rgba(255, 255, 255, 0.03) 2px,
+                rgba(255, 255, 255, 0.03) 4px
+            );
+            pointer-events: none;
+        }
+
+        .generator-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .generator-title {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+            width: 100%;
+        }
+
+        .generator-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .generator-preview {
+            width: 400px;
+            height: 400px;
+            background: #000;
+            border: 3px solid #fff;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .generator-preview:hover {
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Loading animation for images */
+        @keyframes imageLoad {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .generator-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            animation: imageLoad 0.5s ease-out;
+        }
+
+        .bruv-placeholder {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Image gallery for generator */
+        .image-counter {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #000;
+            border: 2px solid #fff;
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            z-index: 10;
+        }
+
+        .download-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .generator-preview:hover .download-overlay {
+            transform: translateY(0);
+        }
+
+        /* Fair launch section */
+        .fair-launch-box {
+            background: #111;
+            border: 3px solid #fff;
+            padding: 3rem;
+            display: inline-block;
+            position: relative;
+            max-width: 800px;
+            overflow: hidden;
+        }
+
+        .fair-launch-box::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #fff, transparent, #fff);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s;
+        }
+
+        .fair-launch-box:hover::before {
+            opacity: 0.3;
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .check-item {
+            color: #fff;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .check-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #0f0;
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px #0f0;
+        }
+
+        .contract-display {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #000;
+            border: 2px solid #666;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contract-display::after {
+            content: 'CLICK TO COPY';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            color: #000;
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .contract-display:hover::after {
+            opacity: 1;
+        }
+
+        .contract-display:hover {
+            border-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Enhanced Roadmap Styles */
+        .roadmap {
+            padding: 5rem 0;
+            position: relative;
+            background: #000;
+        }
+
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #333, #333, transparent);
+            z-index: 1;
+        }
+
+        .roadmap-title {
+            font-size: 4rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            position: relative;
+            z-index: 5;
+        }
+
+        .roadmap-card {
+            background: #000;
+            border: 3px solid #333;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            transform: translateY(0);
+            box-sizing: border-box;
+        }
+
+        .roadmap-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .roadmap-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.1), transparent);
+            transition: height 0.3s ease;
+        }
+
+        .roadmap-card:hover::before {
+            left: 100%;
+        }
+
+        .roadmap-card:hover::after {
+            height: 100%;
+        }
+
+        .roadmap-card:hover {
+            border-color: #fff;
+            transform: translateY(-20px) scale(1.05);
+            box-shadow: 0 30px 60px rgba(255, 255, 255, 0.3);
+        }
+
+        .roadmap-card.active {
+            border-color: #fff;
+            background: #111;
+            transform: scale(1.05);
+        }
+
+        .roadmap-card.active::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .roadmap-number {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #fff, #ccc);
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+            transition: all 0.3s ease;
+        }
+
+        .roadmap-card:hover .roadmap-number {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, #000, #333);
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .roadmap-card.active .roadmap-number {
+            animation: pulse-scale 2s ease-in-out infinite;
+            background: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes pulse-scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .roadmap-card h3 {
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .roadmap-card:hover h3 {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            letter-spacing: 3px;
+        }
+
+        .roadmap-card p {
+            opacity: 0.7;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .roadmap-card:hover p {
+            opacity: 1;
+        }
+
+        .roadmap-status {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: transparent;
+            border: 2px solid #666;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .roadmap-status::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .roadmap-card:hover .roadmap-status::before {
+            left: 0;
+        }
+
+        .roadmap-card:hover .roadmap-status {
+            color: #000;
+            border-color: #fff;
+            font-weight: 900;
+        }
+
+        .roadmap-card.active .roadmap-status {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+            animation: flash 1.5s ease-in-out infinite;
+            font-weight: 900;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        @keyframes flash {
+            0%, 100% { 
+                opacity: 1; 
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            }
+            50% { 
+                opacity: 0.7; 
+                box-shadow: 0 0 40px rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        /* Mobile responsiveness for roadmap */
+        @media (max-width: 768px) {
+            .roadmap::before {
+                display: none;
+            }
+            
+            .roadmap-title {
+                font-size: 2.5rem;
+            }
+            
+            .roadmap-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .roadmap-card h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .footer {
+            background: #000;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 3px solid #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.03) 10px,
+                rgba(255, 255, 255, 0.03) 20px
+            );
+            pointer-events: none;
+        }
+
+        /* Copy notification */
+        .copy-notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            color: #000;
+            padding: 2rem 4rem;
+            font-weight: 900;
+            font-size: 1.5rem;
+            border: 4px solid #000;
+            z-index: 10000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+        }
+
+        .copy-notification.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+                padding: 6rem 1rem 2rem;
+                min-height: auto;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+            
+            .bruv-hero-placeholder {
+                width: 280px;
+                height: 280px;
+            }
+
+            .price-display {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                max-width: 300px;
+                margin: 2rem auto;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+
+            .social-btn.dex-icon {
+                font-size: 0.8rem;
+            }
+
+            .generator-section {
+                padding: 2rem 1rem;
+            }
+
+            .generator-title {
+                font-size: 2rem;
+            }
+
+            .generator-preview {
+                width: 300px;
+                height: 300px;
+            }
+            
+            .generator-controls {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+                max-width: 250px;
+                margin: 2rem auto;
+            }
+
+            .fair-launch-box {
+                padding: 2rem 1rem;
+            }
+
+            .roadmap-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .roadmap-card {
+                padding: 1.5rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .bruv-hero-placeholder {
+                width: 220px;
+                height: 220px;
+            }
+
+            .generator-preview {
+                width: 250px;
+                height: 250px;
+            }
+
+            .check-item {
+                font-size: 1rem;
+            }
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            animation: particle-float 10s linear infinite;
+            opacity: 0.5;
+        }
+
+        @keyframes particle-float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.5; }
+            90% { opacity: 0.5; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+
+        *:focus {
+            outline: none;
+        }
+        
+        ::selection {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <!-- Copy notification popup -->
+    <div class="copy-notification" id="copyNotification">CA COPIED BRUV!</div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">$BRUV</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#generator">Lab</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#roadmap">Roadmap</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title floating">
+                <span style="color: #fff; opacity: 0.9;">INNIT</span><br/>
+                <span class="gradient-text">$BRUV</span>
+            </h1>
+            <p class="hero-subtitle">FASTEST GROWING CULT ON SOLANA FAM</p>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="copyContract()">BUY $BRUV</button>
+                <button class="btn btn-secondary" onclick="scrollToGenerator()">BRUV LAB</button>
+            </div>
+
+            <div class="social-links">
+                <a href="https://x.com/i/communities/1946316835286376835" target="_blank" class="social-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://dexscreener.com/solana/3buk8x1ks3tji59huuuuswad7mjbshyydfsuuxbugeoa" target="_blank" class="social-btn dex-icon">
+                    <span>DEX</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="bruv-hero-placeholder neon-border">
+                <img src="bruv.jpg" alt="$BRUV Sigma Cat" class="bruv-img" />
+            </div>
+            
+            <div class="price-display pulse">
+                <div class="price-value" id="price">$0.0042069</div>
+                <div class=>MADNESS FAM</div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="section generator-section" id="generator">
+        <div class="generator-content">
+            <h2 class="generator-title gradient-text">BRUV GENERATOR INNIT</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Choose your own legendary Bruv PFPs and join the mandem revolution bruv!</p>
+            
+            <div class="generator-preview" id="generator-preview">
+                <div class="image-counter" id="imageCounter" style="display: none;">1/30</div>
+                <div class="bruv-placeholder" id="placeholderText">
+                    CLICK GENERATE TO<br>GET YOUR BRUV
+                </div>
+                <img src="" id="generatedImage" style="display: none;" alt="Generated Bruv">
+                <div class="download-overlay">
+                    <button class="btn btn-primary" onclick="downloadCurrentBruv()" style="width: 100%;">DOWNLOAD THIS BRUV</button>
+                </div>
+            </div>
+
+            <div class="generator-controls">
+                <button class="btn btn-primary" onclick="generateBruv()">Generate Bruv</button>
+                <button class="btn btn-secondary" onclick="previousBruv()">← Previous</button>
+                <button class="btn btn-secondary" onclick="nextBruv()">Next →</button>
+            </div>
+
+            <p style="margin-top: 2rem; opacity: 0.8; font-size: 1.1rem;">Each Bruv is peng with different drip and street cred levels fam!</p>
+        </div>
+    </section>
+
+    <section class="section" id="tokenomics">
+        <div style="text-align: center; margin: 3rem 0;">
+            <div class="fair-launch-box">
+                <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 2rem; color: #fff; text-transform: uppercase; letter-spacing: 2px;" class="glitch">FAIR LAUNCH INNIT</h2>
+                <p style="font-size: 1.5rem; margin-bottom: 2rem; font-weight: 600;">LAUNCHED ON PUMP.FUN FAM</p>
+                <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                    <div class="check-item">LP BURNED BRUV</div>
+                    <div class="check-item">CONTRACT RENOUNCED</div>
+                    <div class="check-item">NO TEAM TOKENS</div>
+                    <div class="check-item">100% COMMUNITY OWNED</div>
+                </div>
+                <div class="contract-display" onclick="copyContract()">
+                    <div style="font-family: monospace; font-size: 1.1rem; word-break: break-all;">
+                        CA: HibC3jm1oq2jVzMR2NSX7xdCNnsGLQ13yK8FEkmhpump
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section roadmap" id="roadmap">
+        <h2 class="roadmap-title gradient-text">THE PLAN FAM</h2>
+        
+        <div class="roadmap-grid">
+            <div class="roadmap-card active">
+                <div class="roadmap-number">01</div>
+                <h3>Launch Ting</h3>
+                <p>Token drop on Pump.fun, building the mandem, social media madness bruv</p>
+                <div class="roadmap-status">LIVE NOW</div>
+            </div>
+            
+            <div class="roadmap-card">
+                <div class="roadmap-number">02</div>
+                <h3>Gang Expansion</h3>
+                <p>Bruv Generator launch, meme battles, link up with influencers innit</p>
+                <div class="roadmap-status">LOADING...</div>
+            </div>
+            
+            <div class="roadmap-card">
+                <div class="roadmap-number">03</div>
+                <h3>Big Moves</h3>
+                <p>CEX listings, NFT drops, merch for the mandem, staking platform</p>
+                <div class="roadmap-status">Q1 2025</div>
+            </div>
+            
+            <div class="roadmap-card">
+                <div class="roadmap-number">04</div>
+                <h3>World Domination</h3>
+                <p>Multi-chain ting, Bruv metaverse, gaming collabs, global takeover fam</p>
+                <div class="roadmap-status">Q2 2025</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; position: relative; z-index: 2;">&copy; 2025 $BRUV TOKEN - STRAIGHT FROM THE ENDS INNIT</p>
+        <p style="margin-top: 1rem; opacity: 0.7; position: relative; z-index: 2;">This is a meme token bruv. Don't be a wasteman with your P's.</p>
+    </footer>
+
+    <script>
+        const MINT = "HibC3jm1oq2jVzMR2NSX7xdCNnsGLQ13yK8FEkmhpump";
+        const CONTRACT_ADDRESS = "HibC3jm1oq2jVzMR2NSX7xdCNnsGLQ13yK8FEkmhpump";
+        
+        // Array of Bruv images - update these paths to match your folder structure
+        const bruvImages = [
+            'images/bruv1.jpg', 'images/bruv2.jpg', 'images/bruv3.jpg', 'images/bruv4.jpg', 'images/bruv5.jpg',
+            'images/bruv6.jpg', 'images/bruv7.jpg', 'images/bruv8.jpg', 'images/bruv9.jpg', 'images/bruv10.jpg',
+            'images/bruv11.jpg', 'images/bruv12.jpg', 'images/bruv13.jpg', 'images/bruv14.jpg', 'images/bruv15.jpg',
+            'images/bruv16.jpg', 'images/bruv17.jpg', 'images/bruv18.jpg', 'images/bruv19.jpg', 'images/bruv20.jpg',
+            'images/bruv21.jpg', 'images/bruv22.jpg', 'images/bruv23.jpg', 'images/bruv24.jpg', 'images/bruv25.jpg',
+            'images/bruv26.jpg', 'images/bruv27.jpg', 'images/bruv28.jpg', 'images/bruv29.jpg', 'images/bruv30.jpg'
+        ];
+        
+        let currentImageIndex = -1;
+        let generatedIndices = [];
+      
+        async function updatePrice() {
+          try {
+            const res  = await fetch(`https://api.dexscreener.com/token-pairs/v1/solana/${MINT}`);
+            const data = await res.json();
+            const pool = data[0];
+      
+            document.getElementById("price").textContent     = `${parseFloat(pool.priceUsd).toFixed(6)}`;
+            document.getElementById("change").textContent    = `${parseFloat(pool.priceChange.h24).toFixed(2)}% MADNESS FAM`;
+      
+          } catch (err) {
+            console.error("Bruv failed to fetch Dexscreener data:", err);
+          }
+        }
+
+        // Copy contract address function
+        function copyContract() {
+            navigator.clipboard.writeText(CONTRACT_ADDRESS).then(() => {
+                // Show notification
+                const notification = document.getElementById('copyNotification');
+                notification.classList.add('show');
+                
+                // Hide notification after 2 seconds
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                }, 2000);
+                
+                console.log('Contract address copied:', CONTRACT_ADDRESS);
+            }).catch(err => {
+                // Fallback for older browsers
+                const textArea = document.createElement("textarea");
+                textArea.value = CONTRACT_ADDRESS;
+                textArea.style.position = "fixed";
+                textArea.style.opacity = "0";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                
+                try {
+                    document.execCommand('copy');
+                    const notification = document.getElementById('copyNotification');
+                    notification.classList.add('show');
+                    setTimeout(() => {
+                        notification.classList.remove('show');
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy:', err);
+                    alert('Failed to copy. Contract: ' + CONTRACT_ADDRESS);
+                }
+                
+                document.body.removeChild(textArea);
+            });
+        }
+    
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Bruv generator functions
+        function generateBruv() {
+            const preview = document.getElementById('generator-preview');
+            const placeholderText = document.getElementById('placeholderText');
+            const generatedImage = document.getElementById('generatedImage');
+            const imageCounter = document.getElementById('imageCounter');
+            
+            // Get a random index that hasn't been used yet
+            let randomIndex;
+            if (generatedIndices.length >= bruvImages.length) {
+                // Reset if all images have been shown
+                generatedIndices = [];
+            }
+            
+            do {
+                randomIndex = Math.floor(Math.random() * bruvImages.length);
+            } while (generatedIndices.includes(randomIndex));
+            
+            generatedIndices.push(randomIndex);
+            currentImageIndex = generatedIndices.length - 1;
+            
+            // Update the display
+            placeholderText.style.display = 'none';
+            generatedImage.src = bruvImages[generatedIndices[currentImageIndex]];
+            generatedImage.style.display = 'block';
+            imageCounter.style.display = 'block';
+            imageCounter.textContent = `${currentImageIndex + 1}/${bruvImages.length}`;
+            
+            // Add generation effect
+            preview.style.borderColor = '#fff';
+            preview.style.boxShadow = '0 0 60px rgba(255, 255, 255, 0.6)';
+            setTimeout(() => {
+                preview.style.boxShadow = '0 0 40px rgba(255, 255, 255, 0.4)';
+            }, 500);
+        }
+        
+        function previousBruv() {
+            if (currentImageIndex > 0) {
+                currentImageIndex--;
+                const generatedImage = document.getElementById('generatedImage');
+                const imageCounter = document.getElementById('imageCounter');
+                
+                generatedImage.src = bruvImages[generatedIndices[currentImageIndex]];
+                imageCounter.textContent = `${currentImageIndex + 1}/${bruvImages.length}`;
+            }
+        }
+        
+        function nextBruv() {
+            if (currentImageIndex < generatedIndices.length - 1) {
+                currentImageIndex++;
+                const generatedImage = document.getElementById('generatedImage');
+                const imageCounter = document.getElementById('imageCounter');
+                
+                generatedImage.src = bruvImages[generatedIndices[currentImageIndex]];
+                imageCounter.textContent = `${currentImageIndex + 1}/${bruvImages.length}`;
+            } else {
+                // Generate a new one if at the end
+                generateBruv();
+            }
+        }
+
+        function downloadCurrentBruv() {
+            const generatedImage = document.getElementById('generatedImage');
+            if (generatedImage.src && generatedImage.style.display !== 'none') {
+                const link = document.createElement('a');
+                link.href = generatedImage.src;
+                link.download = `bruv_${currentImageIndex + 1}.jpg`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        }
+
+        // Scroll to generator function
+        function scrollToGenerator() {
+            const generator = document.getElementById('generator');
+            if (generator) {
+                generator.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Performance optimization - lazy load price updates
+        let priceUpdateInterval;
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            updatePrice();
+            
+            // Update price every 5 seconds (reduced frequency for performance)
+            priceUpdateInterval = setInterval(updatePrice, 5000);
+            
+            // Pause price updates when tab is not visible
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    clearInterval(priceUpdateInterval);
+                } else {
+                    updatePrice();
+                    priceUpdateInterval = setInterval(updatePrice, 5000);
+                }
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Add keyboard navigation for generator
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') {
+                    previousBruv();
+                } else if (e.key === 'ArrowRight') {
+                    nextBruv();
+                } else if (e.key === ' ' && e.target.tagName !== 'BUTTON') {
+                    e.preventDefault();
+                    generateBruv();
+                }
+            });
+        });
+
+        // Add some sigma energy
+        console.log('WAGWAN FAM! Welcome to $BRUV - The most sigma cat in the blockchain game innit!');
+    </script>
+</body>
+</html>
