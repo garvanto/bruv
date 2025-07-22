@@ -13,7 +13,7 @@
     <meta name="twitter:title" content="$BRUV - Sigma Cat Innit">
     <meta name="twitter:description" content="MANS THE HARDEST CAT IN THE ENDS FAM">
     <meta name="twitter:image" content="bruv.jpg">
-    <title>$BRUV - Sigma Cat Innit</title>
+    <title>$BRUV - Real Cult Innit</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         
@@ -895,6 +895,322 @@
             }
         }
 
+        /* Merch Section Styles */
+        .merch-section {
+            background: #000;
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .merch-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 20px,
+                    rgba(255, 255, 255, 0.02) 20px,
+                    rgba(255, 255, 255, 0.02) 40px
+                );
+            pointer-events: none;
+        }
+
+        .merch-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .merch-title {
+            font-size: 4rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .merch-subtitle {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 4rem;
+            font-weight: 600;
+        }
+
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .merch-item {
+            background: #111;
+            border: 3px solid #333;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .merch-item::before {
+            content: 'LIMITED DROP';
+            position: absolute;
+            top: 20px;
+            right: -80px;
+            background: #fff;
+            color: #000;
+            padding: 0.5rem 5rem;
+            font-weight: 900;
+            font-size: 0.8rem;
+            transform: rotate(45deg);
+            letter-spacing: 2px;
+        }
+
+        .merch-item:hover {
+            border-color: #fff;
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(255, 255, 255, 0.2);
+        }
+
+        .shirt-preview {
+            width: 100%;
+            height: 350px;
+            background: #000;
+            border: 2px solid #222;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* T-shirt design */
+        .shirt-placeholder {
+            width: 200px;
+            height: 240px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            position: relative;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .shirt-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 30px;
+            background: #000;
+            border-radius: 0 0 50% 50%;
+        }
+
+        .shirt-placeholder::after {
+            content: '$BRUV';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Hoodie design */
+        .hoodie-placeholder {
+            width: 220px;
+            height: 280px;
+            position: relative;
+        }
+
+        .hoodie-hood {
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .hoodie-hood::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 40px;
+            background: #000;
+            border-radius: 50% 50% 0 0;
+        }
+
+        .hoodie-body {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            position: relative;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .hoodie-body::after {
+            content: '$BRUV';
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .hoodie-pocket {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        .merch-item h3 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+
+        .merch-item:hover h3 {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        .merch-description {
+            color: #ccc;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .coming-soon-badge {
+            background: #fff;
+            color: #000;
+            padding: 1rem 2rem;
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .coming-soon-badge::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.2), transparent);
+            animation: sweep 3s linear infinite;
+        }
+
+        @keyframes sweep {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .merch-notify {
+            background: #111;
+            border: 3px solid #fff;
+            padding: 3rem;
+            text-align: center;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .merch-notify h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .notify-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .notify-input {
+            flex: 1;
+            padding: 1rem;
+            background: #000;
+            border: 2px solid #666;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600;
+            min-width: 250px;
+        }
+
+        .notify-input::placeholder {
+            color: #666;
+        }
+
+        .notify-input:focus {
+            border-color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .merch-title {
+                font-size: 2.5rem;
+            }
+            
+            .merch-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .merch-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .merch-item::before {
+                right: -90px;
+            }
+            
+            .notify-form {
+                flex-direction: column;
+            }
+            
+            .notify-input {
+                width: 100%;
+            }
+        }
+
         .footer {
             background: #000;
             padding: 3rem 2rem;
@@ -1112,8 +1428,8 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#generator">Lab</a>
-                <a href="#tokenomics">Tokenomics</a>
-                <a href="#roadmap">Roadmap</a>
+                <a href="#merch">Drip</a>
+                <a href="#tokenomics">Roadmap</a>
             </div>
         </div>
     </nav>
@@ -1128,7 +1444,7 @@
             <p class="hero-subtitle">FASTEST GROWING CULT ON SOLANA FAM</p>
             
             <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="copyContract()">BUY $BRUV</button>
+                <button class="btn btn-primary" onclick="copyContract()">COP $BRUV INNIT</button>
                 <button class="btn btn-secondary" onclick="scrollToGenerator()">BRUV LAB</button>
             </div>
 
@@ -1146,7 +1462,7 @@
         
         <div class="hero-image">
             <div class="bruv-hero-placeholder neon-border">
-                <img src="images/bruv.JPG" alt="$BRUV Sigma Cat" class="bruv-img" />
+                <img src="./images/bruv.JPG" alt="$BRUV Sigma Cat" class="bruv-img" />
             </div>
             
             <div class="price-display pulse">
@@ -1160,7 +1476,7 @@
     <section class="section generator-section" id="generator">
         <div class="generator-content">
             <h2 class="generator-title gradient-text">BRUV GENERATOR INNIT</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Choose your own legendary Bruv PFPs and join the mandem revolution bruv!</p>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Pick your own legendary Bruv PFPs and join the mandem revolution bruv!</p>
             
             <div class="generator-preview" id="generator-preview">
                 <div class="image-counter" id="imageCounter" style="display: none;">1/30</div>
@@ -1174,7 +1490,7 @@
             </div>
 
             <div class="generator-controls">
-                <button class="btn btn-primary" onclick="generateBruv()">Generate Bruv</button>
+                <button class="btn btn-primary" onclick="generateBruv()">Generate Random Bruv</button>
                 <button class="btn btn-secondary" onclick="previousBruv()">← Previous</button>
                 <button class="btn btn-secondary" onclick="nextBruv()">Next →</button>
             </div>
@@ -1183,7 +1499,10 @@
         </div>
     </section>
 
-    <section class="section" id="tokenomics">
+        </div>
+    </section>
+
+    <footer class="footer">
         <div style="text-align: center; margin: 3rem 0;">
             <div class="fair-launch-box">
                 <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 2rem; color: #fff; text-transform: uppercase; letter-spacing: 2px;" class="glitch">FAIR LAUNCH INNIT</h2>
@@ -1203,38 +1522,68 @@
         </div>
     </section>
 
-    <section class="section roadmap" id="roadmap">
+    <section class="section" id="tokenomics">
         <h2 class="roadmap-title gradient-text">THE PLAN FAM</h2>
         
         <div class="roadmap-grid">
             <div class="roadmap-card active">
                 <div class="roadmap-number">01</div>
                 <h3>Launch Ting</h3>
-                <p>Token drop on Pump.fun, building the mandem, social media madness bruv</p>
-                <div class="roadmap-status">LIVE NOW</div>
+                <p>Fair launch on Pump.fun ✓<br>Building the mandem army ✓<br>Social media takeover ✓</p>
+                <div class="roadmap-status">COMPLETED</div>
             </div>
             
-            <div class="roadmap-card">
+            <div class="roadmap-card active">
                 <div class="roadmap-number">02</div>
                 <h3>Gang Expansion</h3>
-                <p>Bruv Generator launch, meme battles, link up with influencers innit</p>
-                <div class="roadmap-status">LOADING...</div>
+                <p>Bruv Generator launched ✓<br>Epic meme battles daily<br>Community vibes on 100</p>
+                <div class="roadmap-status">ACTIVE NOW</div>
             </div>
             
             <div class="roadmap-card">
                 <div class="roadmap-number">03</div>
-                <h3>Big Moves</h3>
-                <p>CEX listings, NFT drops, merch for the mandem, staking platform</p>
-                <div class="roadmap-status">Q1 2025</div>
+                <h3>Big Links</h3>
+                <p>Influencer partnerships<br>Major CEX listings<br>Strategic collabs innit</p>
+                <div class="roadmap-status">IN PROGRESS</div>
             </div>
             
             <div class="roadmap-card">
                 <div class="roadmap-number">04</div>
                 <h3>World Domination</h3>
-                <p>Multi-chain ting, Bruv metaverse, gaming collabs, global takeover fam</p>
-                <div class="roadmap-status">Q2 2025</div>
+                <p>Global brand shop<br>$BRUV merchandise empire<br>Conquering the streets worldwide</p>
+                <div class="roadmap-status">COMING SOON</div>
             </div>
         </div>
+    </section>
+
+    <section class="merch-section" id="merch">
+        <div class="merch-container">
+            <h2 class="merch-title gradient-text">BRUV DRIP INCOMING</h2>
+            <p class="merch-subtitle">EXCLUSIVE STREET WEAR FOR THE REAL ONES INNIT</p>
+            
+            <div class="merch-grid">
+                <div class="merch-item">
+                    <div class="shirt-preview">
+                        <div class="shirt-placeholder"></div>
+                    </div>
+                    <h3>OG BRUV TEE</h3>
+                    <p class="merch-description">Premium quality black tee with the legendary $BRUV logo. Made for real Bruvs only.</p>
+                    <div class="coming-soon-badge">DROPPING SOON</div>
+                </div>
+                
+                <div class="merch-item">
+                    <div class="shirt-preview">
+                        <div class="shirt-placeholder" style="background: linear-gradient(135deg, #fff 0%, #ccc 100%);">
+                            <style>
+                                .shirt-placeholder:nth-child(1)::after { color: #000; }
+                            </style>
+                        </div>
+                    </div>
+                    <h3>MANDEM EDITION</h3>
+                    <p class="merch-description">Limited white colorway for the true mandem. Cop it before it's gone bruv.</p>
+                    <div class="coming-soon-badge">DROPPING SOON</div>
+                </div>
+            
     </section>
 
     <footer class="footer">
@@ -1457,6 +1806,31 @@
                 }
             });
         });
+
+        // Handle merch notification
+        function handleNotify(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            // Show success message
+            const btn = event.target.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = "YOU'RE IN FAM!";
+            btn.style.background = "#fff";
+            btn.style.color = "#000";
+            
+            // Reset form
+            event.target.reset();
+            
+            // Reset button after 3 seconds
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = "#000";
+                btn.style.color = "#fff";
+            }, 3000);
+            
+            console.log('Email registered:', email);
+        }
 
         // Add some sigma energy
         console.log('WAGWAN FAM! Welcome to $BRUV - The most sigma cat in the blockchain game innit!');
