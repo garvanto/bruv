@@ -1550,6 +1550,20 @@
             background: rgba(255, 255, 255, 0.3);
             color: #fff;
         }
+
+            .shirt-preview{
+  width:100%;
+  aspect-ratio: 1 / 1;      /* keeps it square */
+  overflow:hidden;
+  border:2px solid #fff2;
+  border-radius:12px;
+}
+.shirt-img{
+  width:80%;
+  height:auto;
+  object-fit:cover;          /* crop/cover nicely */
+  display:block;
+}
     </style>
 </head>
 <body>
@@ -1693,34 +1707,33 @@
     </section>
 
     <section class="merch-section" id="merch">
-        <div class="merch-container">
-            <h2 class="merch-title gradient-text">BRUV DRIP INCOMING</h2>
-            <p class="merch-subtitle">EXCLUSIVE STREET WEAR FOR THE REAL ONES INNIT</p>
-            
-            <div class="merch-grid">
-                <div class="merch-item">
-                    <div class="shirt-preview">
-                        <div class="shirt-placeholder"></div>
-                    </div>
-                    <h3>OG BRUV TEE</h3>
-                    <p class="merch-description">Premium quality black tee with the legendary $BRUV logo. Made for real Bruvs only.</p>
-                    <div class="coming-soon-badge">DROPPING SOON</div>
-                </div>
-                
-                <div class="merch-item">
-                    <div class="shirt-preview">
-                        <div class="shirt-placeholder" style="background: linear-gradient(135deg, #fff 0%, #ccc 100%);">
-                            <style>
-                                .shirt-placeholder:nth-child(1)::after { color: #000; }
-                            </style>
-                        </div>
-                    </div>
-                    <h3>MANDEM EDITION</h3>
-                    <p class="merch-description">Limited white colorway for the true mandem. Cop it before it's gone bruv.</p>
-                    <div class="coming-soon-badge">DROPPING SOON</div>
-                </div>
-            
-    </section>
+  <div class="merch-container">
+    <h2 class="merch-title gradient-text">BRUV DRIP INCOMING</h2>
+    <p class="merch-subtitle">EXCLUSIVE STREET WEAR FOR THE REAL ONES INNIT</p>
+
+    <div class="merch-grid">
+      <!-- Item 1 -->
+      <div class="merch-item">
+        <div class="shirt-preview">
+          <img src="images/shirt1.jpg" alt="OG BRUV TEE" class="shirt-img">
+        </div>
+        <h3>OG BRUV TEE</h3>
+        <p class="merch-description">Premium quality black tee with the legendary $BRUV logo. Made for real Bruvs only.</p>
+        <div class="coming-soon-badge">DROPPING SOON</div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="merch-item">
+        <div class="shirt-preview">
+          <img src="images/shirt2.jpg" alt="MANDEM EDITION" class="shirt-img">
+        </div>
+        <h3>MANDEM EDITION</h3>
+        <p class="merch-description">Limited white colorway for the true mandem. Cop it before it's gone bruv.</p>
+        <div class="coming-soon-badge">DROPPING SOON</div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <footer class="footer">
         <p style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; position: relative; z-index: 2;">&copy; 2025 $BRUV TOKEN - STRAIGHT FROM THE ENDS INNIT</p>
